@@ -146,7 +146,15 @@ export default function Home() {
                 >
                   Resume
                 </button>
-                <Image src={arrow} alt="" className="h-5 w-5 my-auto mx-2" />
+                <Image
+                  src={arrow}
+                  alt=""
+                  onClick={() => {
+                    window.location.href =
+                      "https://drive.google.com/file/d/1VlmVWmTcIVSAHyE6OcVj-QYgtRldUGep/view?usp=share_link";
+                  }}
+                  className="h-5 w-5 my-auto mx-2 cursor-pointer"
+                />
               </div>
               <div className="flex justify-center"></div>
             </motion.div>
