@@ -34,7 +34,7 @@ export default function Skills() {
   }, [inView]);
 
   return (
-    <div className={fontUbuntu.className}>
+    <div className={`${fontUbuntu.className} overflow-x-hidden`}>
       <AnimatePresence>
         {/* <section
                   id="Skills"

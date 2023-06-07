@@ -74,7 +74,7 @@ export default function Home() {
       </div>
       {/* Big one  */}
       <div
-        className={`bg-black text-white hidden ${fontUbuntu.className} md:block`}
+        className={`bg-black overflow-x-hidden text-white hidden ${fontUbuntu.className} md:block`}
       >
         <motion.section id="home" className={`body-font bg-black text-white`}>
           <div className="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center ">
@@ -84,6 +84,7 @@ export default function Home() {
                 duration: 0.7,
                 type: "spring",
                 bounce: 0.3,
+                delay: 1.8,
               }}
               animate={{ x: 0, position: "" }}
               className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
@@ -160,7 +161,7 @@ export default function Home() {
               initial={{ x: "100vw" }}
               transition={{
                 duration: 0.7,
-                delay: 0.6,
+                delay: 2.4,
                 type: "spring",
                 bounce: 0.3,
               }}

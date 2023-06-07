@@ -143,7 +143,7 @@ export default function About() {
   }, [inView]);
 
   return (
-    <div className={fontUbuntu.className}>
+    <div className={`${fontUbuntu.className}`}>
       {/* return ( */}
       {/* <> */}
         {/* The bigger laptop screen part */}
@@ -329,7 +329,7 @@ export default function About() {
 
         {/* QUALIFICATION  */}
         <AnimatePresence>
-          <div className={`bg-black text-white`}>
+          <div className={`bg-black text-white overflow-x-hidden`}>
             <motion.div
               initial={{ x: "-100%", opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}

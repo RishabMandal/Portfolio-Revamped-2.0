@@ -46,11 +46,13 @@ export default function Navbar() {
           </Link>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
             <Link
+              // activeClassName="mr-5 hover:text-red-700 cursor-pointer text-red-600"
               className={
                 currentRoute === "/components/home"
                   ? "mr-5 hover:text-red-700 cursor-pointer text-red-600"
                   : "mr-5 hover:text-red-700 cursor-pointer "
               }
+              // activeStyle={{ color: "red" }}
               href="/components/home"
             >
               Home
