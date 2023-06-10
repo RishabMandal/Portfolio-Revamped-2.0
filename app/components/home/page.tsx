@@ -76,7 +76,7 @@ export default function Home() {
       </div>
       {/* Big one  */}
       <div
-        className={`bg-black text-white hidden ${fontUbuntu.className} md:block`}
+        className={`bg-black text-white overflow-x-hidden hidden ${fontUbuntu.className} md:block`}
       >
         <motion.section id="home" className={`body-font bg-black text-white`}>
           <div className="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center ">
