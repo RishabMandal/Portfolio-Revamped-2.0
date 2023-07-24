@@ -44,7 +44,7 @@ export default function Navbar() {
               </motion.span>
             </div>
           </Link>
-          <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <nav className="md:ml-auto flex flex-wrap items-center text-xl justify-center">
             <Link
               // activeClassName="mr-5 hover:text-red-700 cursor-pointer text-red-600"
               className={

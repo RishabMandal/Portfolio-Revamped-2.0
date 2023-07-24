@@ -1,14 +1,38 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Ubuntu } from "next/font/google";
+import axios from "axios";
 
 const fontUbuntu = Ubuntu({ subsets: ["latin"], weight: "400" });
 
 export default function Contact() {
-  function clickme() {
-    alert("Sending this message ....");
+  const [name, setName] = useState();
+  const [email, setemail] = useState();
+  const [message, setmessage] = useState();
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:5000/components/contact")
+      .then((res) => console.log(res.data));
+  }, []);
+
+  function Submit() {
+    if (
+      window.confirm("Are you sure you want to send") &&
+      name &&
+      email &&
+      message
+    )
+      axios
+        .post("http://localhost:5000/components/contact", {
+          name: name,
+          email: email,
+          message: message,
+        })
+        .then((response) => alert(response.data))
+        .catch((error) => console.error(error));
   }
 
   return (
@@ -46,58 +70,61 @@ export default function Contact() {
           </h1>
         </motion.div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <form method="POST">
-            <motion.div
-              initial={{ x: "100vw" }}
-              transition={{
-                duration: 0.7,
-                delay: 0.6,
-                type: "spring",
-                bounce: 0.3,
-              }}
-              animate={{ x: 0 }}
-              className="lg:w-[100%] md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0"
+          {/* <form method="POST"> */}
+          <motion.div
+            initial={{ x: "100vw" }}
+            transition={{
+              duration: 0.7,
+              delay: 0.6,
+              type: "spring",
+              bounce: 0.3,
+            }}
+            animate={{ x: 0 }}
+            className="lg:w-[100%] md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0"
+          >
+            <h2 className="text-gray-900 text-lg font-bold text-center font-Ubuntu title-font mb-5">
+              Message me
+            </h2>
+            <div className="mb-4">
+              <input
+                type="text"
+                onChange={(e) => setName(e.target.value)}
+                // id="full-name"
+                // name="name"
+                placeholder="Name"
+                className="w-full placeholder-gray-800 bg-white rounded border border-gray-300 focus:border-red-600 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div className="mb-4">
+              <input
+                type="email"
+                onChange={(e) => setemail(e.target.value)}
+                // id="email"
+                // name="email"
+                placeholder="Email"
+                className="w-full placeholder-gray-800 bg-white rounded border border-gray-300 focus:border-red-600 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div className="mb-4">
+              <input
+                type="text"
+                onChange={(e) => setmessage(e.target.value)}
+                // id="text2"
+                // name="message"
+                placeholder="Message.."
+                className="w-full placeholder-gray-800 bg-white rounded border border-gray-300 focus:border-red-600 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 mb-3 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <button
+              // type="submit"
+              // id="Sendmessage"
+              onClick={Submit}
+              className="text-white transition ease-in bg-red-700 border-4 border-red-600 py-2 px-6 focus:outline-none hover:bg-white hover:text-red-600 hover:rounded-xl font-Ubuntu rounded-xl"
             >
-              <h2 className="text-gray-900 text-lg font-bold text-center font-Ubuntu title-font mb-5">
-                Message me
-              </h2>
-              <div className="mb-4">
-                <input
-                  type="text"
-                  id="full-name"
-                  name="name"
-                  placeholder="Name"
-                  className="w-full placeholder-gray-800 bg-white rounded border border-gray-300 focus:border-red-600 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
-              </div>
-              <div className="mb-4">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Email"
-                  className="w-full placeholder-gray-800 bg-white rounded border border-gray-300 focus:border-red-600 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
-              </div>
-              <div className="mb-4">
-                <input
-                  type="text"
-                  id="text2"
-                  name="message"
-                  placeholder="Message.."
-                  className="w-full placeholder-gray-800 bg-white rounded border border-gray-300 focus:border-red-600 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 mb-3 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                />
-              </div>
-              <button
-                type="submit"
-                id="Sendmessage"
-                onClick={clickme}
-                className="text-white transition ease-in bg-red-700 border-4 border-red-600 py-2 px-6 focus:outline-none hover:bg-white hover:text-red-600 hover:rounded-xl font-Ubuntu rounded-xl"
-              >
-                Send message
-              </button>
-            </motion.div>
-          </form>
+              Send message
+            </button>
+          </motion.div>
+          {/* </form> */}
         </div>
       </div>
     </section>
