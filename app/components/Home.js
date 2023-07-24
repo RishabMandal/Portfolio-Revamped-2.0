@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import arrow from "../../assets/arrow.png";
 import Picsart_22_03_05_min from "../../assets/Picsart_22-03-05_17-17-22-574-min.png";
