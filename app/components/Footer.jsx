@@ -27,7 +27,10 @@ const Footer = () => {
     <div className={`${fontUbuntu.className} md:fixed md:bottom-0 md:w-screen`}>
       <hr></hr>
       <div className="bg-black pb-20 md:pb-0 lg:pb-0">
-        <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <div
+          style={{ zoom: "130%" }}
+          className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row"
+        >
           <p className="text-red-600 font-Ubuntu text-sm text-center sm:text-left">
             © {new Date().getFullYear()} Rishab —
             <a

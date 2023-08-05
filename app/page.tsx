@@ -43,7 +43,7 @@ function App() {
     };
   }, []);
 
-  const [loadingscreen, setLoadingscreen] = useState("h-[100vh]");
+  const [loadingscreen, setLoadingscreen] = useState("h-[70vh]");
   const [contentscreen, setContentscreen] = useState("hidden");
   useEffect(() => {
     setTimeout(() => {
@@ -58,8 +58,7 @@ function App() {
       <div
         className={`${loadingscreen} ${fontUbuntu.className} justify-center py-20 h-screen min-w-screen bg-black`}
       >
-        <div className="text-white z-10 text-lg font-bold fixed top-[47%] left-[47%]">
-          {/* <div className="text-white z-10 text-lg font-bold inline-block my-auto mx-auto"> */}
+        <div className="text-white z-10 text-lg font-bold fixed top-[45%] left-[48%]">
           Loading...
         </div>
         <Preloader />

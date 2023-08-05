@@ -151,7 +151,7 @@ export default function About() {
       {/* // */}
       <section
         id="aboutmyself"
-        className={`bg-black text-white pt-12 body-font hidden md:block lg:block font-Rampart`}
+        className={`bg-black text-white pt-20 body-font hidden md:block lg:block font-Rampart`}
       >
         {/* <div className="text-center m-10">
                 <h1 className="title-font sm:text-4xl text-3xl mb-1 font-bold text-black underline underline-offset-[24px]">
@@ -342,7 +342,9 @@ export default function About() {
 
       {/* QUALIFICATION  */}
       <AnimatePresence>
-        <div className={`bg-black text-white overflow-x-hidden`}>
+        <div
+          className={`bg-black text-white overflow-x-hidden`}
+        >
           <motion.div
             initial={{ x: "-100%", opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
@@ -356,7 +358,7 @@ export default function About() {
               delay: 0.3,
               ease: "easeOut",
             }}
-            className={` bg-black text-white w-screen text-center px-5 py-24 items-center`}
+            className={`bg-black md:container mx-auto text-white w-screen text-center px-5 py-24 items-center`}
           >
             <h1
               ref={ref}

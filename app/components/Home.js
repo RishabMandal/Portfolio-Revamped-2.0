@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import arrow from "../../assets/arrow.png";
@@ -79,7 +79,7 @@ export default function Home() {
         className={`bg-black overflow-x-hidden text-white hidden ${fontUbuntu.className} md:block`}
       >
         <motion.section id="home" className={`body-font bg-black text-white`}>
-          <div className="container mx-auto flex px-5 py-8 md:flex-row flex-col items-center ">
+          <div className="container mx-auto h-[70vh] flex px-5 py-8 md:flex-row flex-col items-center ">
             <motion.div
               initial={{ x: "-100vw" }}
               transition={{

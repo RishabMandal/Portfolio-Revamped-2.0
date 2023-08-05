@@ -36,43 +36,6 @@ export default function Skills() {
   return (
     <div className={`${fontUbuntu.className} overflow-x-hidden`}>
       <AnimatePresence>
-        {/* <section
-                  id="Skills"
-                  className={`text-gray-600 body-font bg-black text-white`}
-                >
-                  <div className="container px-5 py-24 mx-auto flex flex-wrap">
-                    <h2 className="sm:text-4xl font-bold font-Ubuntu mt-10 text-3xl mb-2 md:w-2/5 font-Rampart ">
-                      My Soft Skills
-                    </h2>
-                    <div className="md:w-3/5 mt-10 md:pl-6">
-                      <p className="leading-relaxed text-base font-Ubuntu">
-                        Web development, Basic android application development
-                        through Android Studio, Video editing, Photoshop and
-                        photo editing, C, Java, React JS, Node JS, Express JS,
-                        MongoDB.
-                      </p>
-                      <div className="flex md:mt-4 mt-6">
-                        <a className="text-red-600 inline-flex items-center cursor-pointer ">
-                          <button className="inline-flex font-Ubuntu text-white bg-red-700 py-2 px-6 focus:outline-none hover:text-red-600 hover:border-4 hover:bg-white hover:border-red-700 hover:shadow-xl hover:shadow-red-600/40 border-4 border-red-700 rounded-xl">
-                            Read more
-                          </button>
-
-                          <svg
-                            fill="none"
-                            stroke="currentColor"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            className="w-4 h-4 ml-2"
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </section> */}
         {/* New Section  */}
         {/* Photos section start (These are the technologies I know) */}
         <div
@@ -242,7 +205,7 @@ export default function Skills() {
         </motion.section>
         {/* 2nd project  */}
         <motion.section
-          className={`text-gray-600 bg-black text-white body-font font-Rampart `}
+          className={`bg-black text-white body-font font-Rampart `}
         >
           <motion.div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <motion.div
@@ -260,7 +223,7 @@ export default function Skills() {
               }}
               ref={ref}
               // className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
-              className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
+              className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left items-center text-center"
             >
               {/* <Image
                         onClick={() => {
