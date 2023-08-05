@@ -7,6 +7,13 @@ export const metadata = {
   description: "By Rishab Mandal",
 };
 
+const style = {
+  "@media screen and (min-width: 600px)": {
+    zoom: "135%",
+  },
+  zoom: "135%",
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -19,13 +26,14 @@ export default function RootLayout({
           scrollBehavior: "smooth",
           // zoom: "120%"
         }}
-        // className="md:scale-110"
       >
         <Navbar />
         <div
-          style={{
-            zoom: "135%",
-          }}
+          // style={{
+          //   zoom: "135%",
+          // }}
+          style={style}
+          // className="md:scale-[135%]"
         >
           {children}
         </div>

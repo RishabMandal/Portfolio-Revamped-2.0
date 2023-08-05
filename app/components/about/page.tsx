@@ -247,7 +247,7 @@ export default function About() {
       {/* // */}
       <section
         id="aboutmyself"
-        className={`bg-black text-white md:hidden lg:hidden body-font font-Rampart`}
+        className={`bg-black scale-[85%] md:scale-100 text-white md:hidden lg:hidden body-font font-Rampart`}
       >
         <div
           className={`container bg-black text-white mx-auto flex px-5 py-24 md:flex-row flex-col items-center`}
@@ -358,7 +358,7 @@ export default function About() {
               delay: 0.3,
               ease: "easeOut",
             }}
-            className={`bg-black md:container mx-auto text-white w-screen text-center px-5 py-24 items-center`}
+            className={`bg-black container scale-75 md:scale-100 mx-auto text-white md:w-screen text-center px-5 py-24 items-center`}
           >
             <h1
               ref={ref}

@@ -40,7 +40,7 @@ export default function Contact() {
       id="contactme"
       className={`bg-black overflow-x-hidden text-white ${fontUbuntu.className} body-font`}
     >
-      <div className="container mx-auto h-[70vh] flex px-5 py-5 md:py-24 lg:py-24 md:flex-row flex-col items-center">
+      <div className="container scale-[85%] md:scale-100 mx-auto md:h-[70vh] flex px-5 py-5 md:py-24 lg:py-24 md:flex-row flex-col items-center">
         <motion.div
           initial={{ x: "-100vw" }}
           transition={{
