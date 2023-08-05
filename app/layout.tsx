@@ -8,9 +8,9 @@ export const metadata = {
 };
 
 const style = {
-  "@media screen and (min-width: 600px)": {
-    zoom: "135%",
-  },
+  // "@media screen and (min-width: 600px)": {
+  //   zoom: "135%",
+  // },
   zoom: "135%",
 };
 

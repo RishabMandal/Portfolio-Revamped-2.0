@@ -362,22 +362,22 @@ export default function About() {
           >
             <h1
               ref={ref}
-              className={`title-font sm:text-4xl text-3xl my-10 mx-auto font-bold font-Ubuntu bg-black text-white`}
+              className={`title-font md:text-4xl text-2xl my-10 mx-auto font-bold font-Ubuntu bg-black text-white`}
             >
               Qualification
               <br className="hidden lg:inline-block" />
             </h1>
             <div className="inline-block mx-auto text-left">
-              <div className="flex my-8 text-lg">
+              <div className="flex my-8 md:text-lg">
                 <div className="bg-red-600 rounded-full px-3 py-1 h-fit font-semibold">
                   3
                 </div>
                 <div className=" text-red-600 mx-4 hover:scale-110 transition ease-in">
-                  BE in Computer Engineering{" "}
+                  BE in Computer Engineering
                   <p>Thadomal Shahani Engineering College</p>
                 </div>
               </div>
-              <div className="flex my-8 text-lg">
+              <div className="flex my-8 md:text-lg">
                 <div className="bg-red-600 rounded-full px-3 py-1 h-fit font-semibold">
                   2
                 </div>
@@ -385,7 +385,7 @@ export default function About() {
                   HSC <p>Swami Vivekanand Junior College</p>
                 </div>
               </div>
-              <div className="flex my-8 text-lg">
+              <div className="flex my-8 md:text-lg">
                 <div className="bg-red-600 rounded-full px-3 py-1 h-fit font-semibold">
                   1
                 </div>
