@@ -197,7 +197,7 @@ export default function About() {
                 onClick={() => {
                   navigator.vibrate(50);
                   window.location.href =
-                    "https://drive.google.com/file/d/1VlmVWmTcIVSAHyE6OcVj-QYgtRldUGep/view?usp=share_link";
+                    "https://docs.google.com/document/d/1qNDTlxYtQuw0PsfeU8DkbsWUBK5F3NyPYtkNP62o-6s/edit";
                 }}
                 className={`inline-flex hover:bg-black font-Ubuntu text-white transition ease-in hover:shadow-xl hover:shadow-red-600/40 bg-red-700 animate-bouncy hover:animate-none border-4 border-red-700 py-2 px-6 focus:outline-none hover:text-red-600 hover:border-4 hover:border-red-600 hover:rounded-xl rounded-xl`}
               >
@@ -289,6 +289,8 @@ export default function About() {
                 className={`inline-flex hover:bg-black font-Ubuntu text-white hover:shadow-xl hover:shadow-red-600/40 bg-red-700 animate-bouncy hover:animate-none border-4 border-red-700 py-2 px-6 focus:outline-none hover:text-red-600 hover:border-4 hover:border-red-600 hover:rounded-xl rounded-xl`}
                 onClick={() => {
                   navigator.vibrate(50);
+                  window.location.href =
+                    "https://docs.google.com/document/d/1qNDTlxYtQuw0PsfeU8DkbsWUBK5F3NyPYtkNP62o-6s/edit";
                 }}
               >
                 Download CV
@@ -297,7 +299,7 @@ export default function About() {
                 onClick={() => {
                   navigator.vibrate(50);
                   window.location.href =
-                    "https://drive.google.com/file/d/1VlmVWmTcIVSAHyE6OcVj-QYgtRldUGep/view?usp=share_link";
+                    "https://docs.google.com/document/d/1qNDTlxYtQuw0PsfeU8DkbsWUBK5F3NyPYtkNP62o-6s/edit";
                 }}
                 src={downloadimage}
                 alt=""

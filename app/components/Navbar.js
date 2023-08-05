@@ -25,10 +25,13 @@ export default function Navbar() {
 
   return (
     <>
-      <motion.header
+      <header
         className={`bg-black ${fontUbuntu.className} text-white z-10 fixed top-0 w-screen body-font hidden md:block lg:block`}
       >
-        <div className="container mx-auto font-Ubuntu flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <div
+          style={{ zoom: "135%" }}
+          className="container mx-auto w-full font-Ubuntu flex flex-wrap p-5 flex-col md:flex-row items-center"
+        >
           <Link href="/components/home">
             <div className="flex title-font font-medium items-center mb-4 md:mb-0">
               <motion.span
@@ -112,7 +115,7 @@ export default function Navbar() {
                       /> */}
           </motion.button>
         </div>
-      </motion.header>
+      </header>
 
       {/* Smaller navbar upper part */}
 
