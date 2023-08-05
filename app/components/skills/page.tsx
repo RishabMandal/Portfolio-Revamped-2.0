@@ -34,12 +34,14 @@ export default function Skills() {
   }, [inView]);
 
   return (
-    <div className={`${fontUbuntu.className} overflow-x-hidden`}>
+    <div
+      className={`${fontUbuntu.className} scale-[90%] md:scale-100 overflow-x-hidden`}
+    >
       <AnimatePresence>
         {/* New Section  */}
         {/* Photos section start (These are the technologies I know) */}
         <div
-          className={`flex ${fontUbuntu.className} flex-col bg-black text-white mt-16 pt-16 items-center text-center`}
+          className={`flex ${fontUbuntu.className} flex-col bg-black text-white md:mt-16 md:pt-16 items-center text-center`}
         >
           <h1
             className={`title-font sm:text-4xl text-3xl font-bold font-Ubuntu bg-black text-white underline underline-offset-[24px]`}
@@ -54,7 +56,7 @@ export default function Skills() {
             what i know
           </p>
         </div>
-        {/* new start */}{" "}
+        {/* new start */}
         <div className={fontUbuntu.className}>
           <div className={`w-full pb-56 bg-black text-white `}>
             <div className="max-w-[1000px] mx-auto py-4 pb-4 flex flex-col justify-center w-full h-full">

@@ -250,7 +250,7 @@ export default function About() {
         className={`bg-black scale-[85%] md:scale-100 text-white md:hidden lg:hidden body-font font-Rampart`}
       >
         <div
-          className={`container bg-black text-white mx-auto flex px-5 py-24 md:flex-row flex-col items-center`}
+          className={`container bg-black text-white mx-auto flex px-5 pb-24 md:flex-row flex-col items-center`}
         >
           <motion.div
             initial={{ x: "-100vw" }}
