@@ -43,7 +43,7 @@ function App() {
     };
   }, []);
 
-  const [loadingscreen, setLoadingscreen] = useState("h-[70vh]");
+  const [loadingscreen, setLoadingscreen] = useState("block md:h-[70vh]");
   const [contentscreen, setContentscreen] = useState("hidden");
   useEffect(() => {
     setTimeout(() => {
@@ -56,14 +56,14 @@ function App() {
   return (
     <>
       <div
-        className={`${loadingscreen} ${fontUbuntu.className} justify-center py-20 h-screen min-w-screen bg-black`}
+        className={`hidden md:${loadingscreen} ${fontUbuntu.className} justify-center py-20 h-screen min-w-screen bg-black`}
       >
         <div className="text-white z-10 text-lg font-bold fixed top-[45%] left-[48%]">
           Loading...
         </div>
         <Preloader />
       </div>
-      <div className={`${contentscreen}`}>
+      <div className={`md:${contentscreen}`}>
         <Home />
       </div>
     </>

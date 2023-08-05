@@ -49,11 +49,11 @@ export default function Navbar() {
           </Link>
           <nav className="md:ml-auto flex flex-wrap items-center text-xl justify-center">
             <Link
-              // activeClassName="mr-5 hover:text-red-700 cursor-pointer text-red-600"
+              // activeClassName="mr-5 hover:text-red-700 duration-200 cursor-pointer text-red-600"
               className={
                 currentRoute === "/components/home"
-                  ? "mr-5 hover:text-red-700 cursor-pointer text-red-600"
-                  : "mr-5 hover:text-red-700 cursor-pointer "
+                  ? "mr-5 hover:text-red-700 duration-200 cursor-pointer text-red-600"
+                  : "mr-5 hover:text-red-700 duration-200 cursor-pointer "
               }
               // activeStyle={{ color: "red" }}
               href="/components/home"
@@ -63,8 +63,8 @@ export default function Navbar() {
             <Link
               className={
                 currentRoute === "/components/about"
-                  ? "mr-5 hover:text-red-700 cursor-pointer text-red-600"
-                  : "mr-5 hover:text-red-700 cursor-pointer "
+                  ? "mr-5 hover:text-red-700 duration-200 cursor-pointer text-red-600"
+                  : "mr-5 hover:text-red-700 duration-200 cursor-pointer "
               }
               href="/components/about"
             >
@@ -73,8 +73,8 @@ export default function Navbar() {
             <Link
               className={
                 currentRoute === "/components/skills"
-                  ? "mr-5 hover:text-red-700 cursor-pointer text-red-600"
-                  : "mr-5 hover:text-red-700 cursor-pointer "
+                  ? "mr-5 hover:text-red-700 duration-200 cursor-pointer text-red-600"
+                  : "mr-5 hover:text-red-700 duration-200 cursor-pointer "
               }
               href="/components/skills"
             >
@@ -83,8 +83,8 @@ export default function Navbar() {
             <Link
               className={
                 currentRoute === "/components/contact"
-                  ? "mr-5 hover:text-red-700 cursor-pointer text-red-600"
-                  : "mr-5 hover:text-red-700 cursor-pointer "
+                  ? "mr-5 hover:text-red-700 duration-200 cursor-pointer text-red-600"
+                  : "mr-5 hover:text-red-700 duration-200 cursor-pointer "
               }
               href="/components/contact"
             >
@@ -176,8 +176,8 @@ export default function Navbar() {
               <Link
                 className={
                   currentRoute === "/components/home"
-                    ? "mr-5 hover:text-red-700 cursor-pointer text-red-600"
-                    : "mr-5 hover:text-red-700 cursor-pointer "
+                    ? "mr-5 hover:text-red-700 duration-200 cursor-pointer text-red-600"
+                    : "mr-5 hover:text-red-700 duration-200 cursor-pointer "
                 }
                 href="/components/home"
               >
@@ -186,8 +186,8 @@ export default function Navbar() {
               <Link
                 className={
                   currentRoute === "/components/about"
-                    ? "mr-5 hover:text-red-700 cursor-pointer text-red-600"
-                    : "mr-5 hover:text-red-700 cursor-pointer "
+                    ? "mr-5 hover:text-red-700 duration-200 cursor-pointer text-red-600"
+                    : "mr-5 hover:text-red-700 duration-200 cursor-pointer "
                 }
                 href="/components/about"
               >
@@ -196,8 +196,8 @@ export default function Navbar() {
               <Link
                 className={
                   currentRoute === "/components/skills"
-                    ? "mr-5 hover:text-red-700 cursor-pointer text-red-600"
-                    : "mr-5 hover:text-red-700 cursor-pointer "
+                    ? "mr-5 hover:text-red-700 duration-200 cursor-pointer text-red-600"
+                    : "mr-5 hover:text-red-700 duration-200 cursor-pointer "
                 }
                 href="/components/skills"
               >
@@ -206,8 +206,8 @@ export default function Navbar() {
               <Link
                 className={
                   currentRoute === "/components/contact"
-                    ? "mr-5 hover:text-red-700 cursor-pointer text-red-600"
-                    : "mr-5 hover:text-red-700 cursor-pointer "
+                    ? "mr-5 hover:text-red-700 duration-200 cursor-pointer text-red-600"
+                    : "mr-5 hover:text-red-700 duration-200 cursor-pointer "
                 }
                 href="/components/contact"
               >
