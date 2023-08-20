@@ -204,9 +204,14 @@ export default function About() {
                 Download CV
               </button>
               <Image
+                onClick={() => {
+                  navigator.vibrate(50);
+                  window.location.href =
+                    "https://docs.google.com/document/d/1qNDTlxYtQuw0PsfeU8DkbsWUBK5F3NyPYtkNP62o-6s/edit";
+                }}
                 src={downloadimage}
                 alt=""
-                className="w-8 h-8 my-auto mx-2"
+                className="w-8 h-8 my-auto mx-2 cursor-pointer hover:scale-125 duration-200"
               />
             </div>
           </motion.div>
@@ -222,8 +227,8 @@ export default function About() {
             className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mt-[-150px]"
           >
             {/* My try for cube animation  */}
-            <div>
-              {/* <Canvas>
+            {/* <div> */}
+            {/* <Canvas>
                   <ambientLight intensity={0.7} />
                   <spotLight
                     position={[10, 10, 10]}
@@ -233,12 +238,8 @@ export default function About() {
                   <pointLight position={[-10, -10, -10]} />
                   <Box position={[0, 0, 0]} />
                 </Canvas> */}
-              <Image
-                src={Red_Coding}
-                alt="Image"
-                className="rounded-xl mt-12"
-              />
-            </div>
+            <Image src={Red_Coding} alt="Image" className="rounded-xl mt-12" />
+            {/* </div> */}
           </motion.div>
         </div>
       </section>
@@ -342,9 +343,7 @@ export default function About() {
 
       {/* QUALIFICATION  */}
       <AnimatePresence>
-        <div
-          className={`bg-black text-white overflow-x-hidden`}
-        >
+        <div className={`bg-black text-white overflow-x-hidden`}>
           <motion.div
             initial={{ x: "-100%", opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}

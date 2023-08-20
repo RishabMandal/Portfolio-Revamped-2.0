@@ -43,7 +43,7 @@ const Footer = () => {
             </a>
           </p>
           <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-            <a className="text-red-600 cursor-pointer" onClick={clickfacebook}>
+            <a className="text-red-600 hover:scale-125 duration-200 cursor-pointer" onClick={clickfacebook}>
               <svg
                 fill="currentColor"
                 strokeLinecap="round"
@@ -56,7 +56,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              className="ml-3 text-red-600 cursor-pointer"
+              className="ml-3 text-red-600 hover:scale-125 duration-200 cursor-pointer"
               onClick={clickinsta}
             >
               <svg
@@ -73,7 +73,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              className="ml-3 text-red-600 cursor-pointer"
+              className="ml-3 text-red-600 hover:scale-125 duration-200 cursor-pointer"
               onClick={clicklinkedin}
             >
               <svg
@@ -92,7 +92,7 @@ const Footer = () => {
                 <circle cx="4" cy="4" r="2" stroke="none"></circle>
               </svg>
             </a>
-            <a className="ml-3 text-red-600 cursor-pointer">
+            <a className="ml-3 text-red-600 hover:scale-125 duration-200 cursor-pointer">
               <Image
                 src={githubicon}
                 onClick={() => {
