@@ -7,7 +7,7 @@ import menuicon from "../../assets/icons-circled-menu.png";
 import RM from "../../assets/RM.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { Ubuntu } from "next/font/google";
 
@@ -15,13 +15,7 @@ const fontUbuntu = Ubuntu({ subsets: ["latin"], weight: "400" });
 
 export default function Navbar() {
   const [hide, setHide] = useState("hidden");
-  const router = useRouter();
-  // const currentRoute = router.pathname;
-  const [currentRoute, setCurrentRoute] = useState(router.pathname);
-
-  useEffect(() => {
-    console.log(currentRoute);
-  }, [currentRoute]);
+  const currentRoute = usePathname();
 
   return (
     <>
