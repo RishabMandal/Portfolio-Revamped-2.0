@@ -45,7 +45,7 @@ export default function Navbar() {
             <Link
               // activeClassName="mr-5 hover:text-red-700 duration-200 cursor-pointer text-red-600"
               className={
-                currentRoute === "/components/home"
+                currentRoute === "/components/home" || currentRoute === "/"
                   ? "mr-5 hover:text-red-700 duration-200 cursor-pointer text-red-600"
                   : "mr-5 hover:text-red-700 duration-200 cursor-pointer "
               }
