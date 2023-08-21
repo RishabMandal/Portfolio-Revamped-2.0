@@ -173,6 +173,7 @@ export default function Home() {
             >
               <Image
                 className="object-cover object-center rounded mt-[3.75rem]"
+                priority={true}
                 alt="hero"
                 src={Picsart_22_03_05_min}
               />

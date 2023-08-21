@@ -1,11 +1,11 @@
 "use client"
 
 import React from "react";
-import { motion } from "framer-motion";
-import { Ubuntu } from "next/font/google";
+// import { motion } from "framer-motion";
+// import { Ubuntu } from "next/font/google";
 import "./preloader.css"
 
-const fontUbuntu = Ubuntu({ subsets: ["latin"], weight: "400" });
+// const fontUbuntu = Ubuntu({ subsets: ["latin"], weight: "400" });
 
 const Preloader = () => {
   return (
