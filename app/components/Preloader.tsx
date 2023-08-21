@@ -9,7 +9,7 @@ const fontUbuntu = Ubuntu({ subsets: ["latin"], weight: "400" });
 
 const Preloader = () => {
   return (
-    <div className={`flex justify-center items-center h-full bg-black`}>
+    <div className={`flex justify-center items-center md:h-full h-[50vh] bg-black`}>
       <div className="box2 text-lg font-bold z-30">
         Loading
       </div>

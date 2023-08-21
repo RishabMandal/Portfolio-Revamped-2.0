@@ -9,8 +9,10 @@ body {
 }
 
 .box2 {
-  width: 200px;
-  height: 200px;
+  /* width: 200px; */
+  width: 12.5rem;
+  /* height: 200px; */
+  height: 12.5rem;
   border: 10px solid #ccc;
   border-radius: 10px;
   line-height: 200px;
@@ -25,7 +27,7 @@ body {
   position: absolute;
   width: 400px;
   height: 400px;
-  background: red;
+  background: rgb(220 38 38);
   left: 50%;
   transform: translateX(-50%);
   border-radius: 40%;

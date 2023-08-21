@@ -21,7 +21,8 @@ export default function Home() {
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 block mx-auto">
           <Image
             className="object-cover object-center rounded mt-6"
-            alt="hero"
+            priority={true}
+            alt="Rishab Mandal"
             src={Picsart_22_03_05_min}
           />
         </div>
