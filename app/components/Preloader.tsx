@@ -3,13 +3,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Ubuntu } from "next/font/google";
+import "./preloader.css"
 
 const fontUbuntu = Ubuntu({ subsets: ["latin"], weight: "400" });
 
 const Preloader = () => {
   return (
     <div className={`flex justify-center items-center h-full bg-black`}>
-      <motion.div
+      <div className="box2 text-lg font-bold z-30">
+        Loading
+      </div>
+      {/* <motion.div
         className="loader-container"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -20,7 +24,7 @@ const Preloader = () => {
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 1 }}
         />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };

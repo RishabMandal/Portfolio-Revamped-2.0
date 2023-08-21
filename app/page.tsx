@@ -56,14 +56,14 @@ function App() {
   return (
     <>
       <div
-        className={`hidden md:${loadingscreen} ${fontUbuntu.className} justify-center py-20 h-screen min-w-screen bg-black`}
+        className={`${loadingscreen} ${fontUbuntu.className} justify-center py-20 h-screen min-w-screen bg-black`}
       >
-        <div className="text-white z-10 text-lg font-bold fixed top-[45%] left-[48%]">
+        {/* <div className="text-white z-10 text-lg font-bold fixed top-[45%] left-[48%]">
           Loading...
-        </div>
+        </div> */}
         <Preloader />
       </div>
-      <div className={`md:${contentscreen}`}>
+      <div className={`${contentscreen}`}>
         <Home />
       </div>
     </>
