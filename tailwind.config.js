@@ -5,6 +5,8 @@ module.exports = {
     "./pages/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/pages/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/404.js",
   ],
   theme: {
     extend: {
