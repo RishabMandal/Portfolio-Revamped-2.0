@@ -1,18 +1,21 @@
-"use client"
+"use client";
 
 import React from "react";
 // import { motion } from "framer-motion";
 // import { Ubuntu } from "next/font/google";
-import "./preloader.css"
+import "./preloader.css";
 
 // const fontUbuntu = Ubuntu({ subsets: ["latin"], weight: "400" });
 
 const Preloader = () => {
   return (
-    <div className={`flex justify-center items-center md:h-full h-[50vh] bg-black`}>
-      <div className="box2 text-lg font-bold z-30">
-        Loading
+    <div
+      className={`flex justify-center items-center md:h-full h-[50vh] bg-black`}
+    >
+      <div className="box2 text-lg font-bold z-20">
+        <div className="z-30">Loading</div>
       </div>
+      <div className="cup border-8 border-l-0 border-gray-300 px-5 py-10 rounded-r-3xl -translate-y-5 z-30"></div>
       {/* <motion.div
         className="loader-container"
         initial={{ opacity: 0 }}

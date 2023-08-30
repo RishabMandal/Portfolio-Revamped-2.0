@@ -14,7 +14,10 @@ body {
   /* height: 200px; */
   height: 12.5rem;
   border: 10px solid #ccc;
-  border-radius: 10px;
+  border-radius: 1.5rem;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top: none;
   line-height: 200px;
   text-align: center;
   color: #ddd;
@@ -34,6 +37,10 @@ body {
   animation: fill 3s ease-in-out infinite;
   /* z-index: -1; */
 }
+
+/* .cup{
+
+} */
 
 @keyframes fill {
   from {
