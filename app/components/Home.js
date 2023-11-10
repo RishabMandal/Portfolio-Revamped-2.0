@@ -141,7 +141,7 @@ export default function Home() {
                 <button
                   onClick={() => {
                     window.location.href =
-                      "https://drive.google.com/file/d/1VlmVWmTcIVSAHyE6OcVj-QYgtRldUGep/view?usp=share_link";
+                      "https://drive.google.com/file/d/111ITsTbq5Lo0_RaAlx-ZBMZMwSI8KJgt/view?usp=drivesdk";
                   }}
                   className={`inline font-Ubuntu text-white hover:bg-black
                      bg-red-700 py-2 px-6 focus:outline-none transition ease-in hover:text-red-600 hover:border-4 hover:border-red-700 hover:shadow-xl hover:shadow-red-600/40 rounded-xl border-4 border-red-700`}
@@ -153,7 +153,7 @@ export default function Home() {
                   alt=""
                   onClick={() => {
                     window.location.href =
-                      "https://drive.google.com/file/d/1VlmVWmTcIVSAHyE6OcVj-QYgtRldUGep/view?usp=share_link";
+                      "https://drive.google.com/file/d/111ITsTbq5Lo0_RaAlx-ZBMZMwSI8KJgt/view?usp=drivesdk";
                   }}
                   className="h-5 w-5 my-auto mx-2 cursor-pointer"
                 />
