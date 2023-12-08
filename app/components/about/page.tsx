@@ -4,120 +4,8 @@ import React, { useRef, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import downloadimage from "../../../assets/download.png";
 import Red_Coding from "../../../assets/Red_Coding.jpg";
-// import ReactImage from "../../../assets/react.png";
-// import HTML from "../../../assets/html.png";
-// import CSS from "../../../assets/css.png";
-// import JavaScript from "../../../assets/javascript.png";
-// import GitHub from "../../../assets/github.png";
-// import Tailwind from "../../../assets/tailwind.png";
 import Image from "next/image";
-// import { TextureLoader } from "three/src/loaders/TextureLoader.js";
 import { useInView } from "react-intersection-observer";
-// import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-// import { OrbitControls, useTexture } from "@react-three/drei";
-// import Footer from "./components/Footer";
-
-// // My animation try, Beware
-// function Box(props) {
-//   // This reference gives us direct access to the THREE.Mesh object
-//   const ref = useRef();
-//   // Hold state for hovered and clicked events
-//   const [hovered, hover] = useState(false);
-//   const [clicked, click] = useState(false);
-
-//   const texture1 = useLoader(TextureLoader, Tailwind);
-//   const texture2 = useLoader(TextureLoader, ReactImage);
-//   const texture3 = useLoader(TextureLoader, HTML);
-//   const texture4 = useLoader(TextureLoader, CSS);
-//   const texture5 = useLoader(TextureLoader, JavaScript);
-//   const texture6 = useLoader(TextureLoader, GitHub);
-
-//   // Subscribe this component to the render-loop, rotate the mesh every frame
-//   useFrame(
-//     (state, delta) =>
-//       (ref.current.rotation.x =
-//         ref.current.rotation.y =
-//         ref.current.rotation.z +=
-//           0.01)
-//   );
-// Return the view, these are regular Threejs elements expressed in JSX
-// return (
-//     <mesh
-//       // {...propsii}
-//       // map={propsii}
-//       {...props}
-//       ref={ref}
-//       // scale={clicked ? 1.5 : 1}
-//       onClick={(event) => click(!clicked)}
-//       onPointerOver={(event) => hover(true)}
-//       onPointerOut={(event) => hover(false)}
-//     >
-//       <OrbitControls />
-//       <boxBufferGeometry args={[2.5, 2.5, 2.5]} />
-//       {/* <meshStandardMaterial
-//         attachArray="material"
-//         map={texture1}
-//         color={hovered ? "green" : "white"}
-//       />
-//       <meshStandardMaterial
-//         attachArray="material"
-//         map={texture2}
-//         color={hovered ? "green" : "white"}
-//       />
-//       <meshStandardMaterial
-//         attachArray="material"
-//         map={texture3}
-//         color={hovered ? "green" : "white"}
-//       />
-//       <meshStandardMaterial
-//         attachArray="material"
-//         map={texture4}
-//         color={hovered ? "green" : "white"}
-//       />
-//       <meshStandardMaterial
-//         attachArray="material"
-//         map={texture5}
-//         color={hovered ? "green" : "white"}
-//       />
-//       <meshStandardMaterial
-//         attachArray="material-1"
-//         map={texture6}
-//         color={hovered ? "green" : "red"}
-//       /> */}
-//       <meshStandardMaterial
-//         attach="material-0"
-//         map={texture1}
-//         color={hovered ? "" : "white"}
-//       />
-//       <meshStandardMaterial
-//         attach="material-1"
-//         map={texture2}
-//         color={hovered ? "" : ""}
-//       />
-//       <meshStandardMaterial
-//         attach="material-2"
-//         map={texture3}
-//         color={hovered ? "" : ""}
-//       />
-//       <meshStandardMaterial
-//         attach="material-3"
-//         map={texture4}
-//         color={hovered ? "" : ""}
-//       />
-//       <meshStandardMaterial
-//         attach="material-4"
-//         map={texture5}
-//         color={hovered ? "" : ""}
-//       />
-//       <meshStandardMaterial
-//         attach="material-5"
-//         map={texture6}
-//         color={hovered ? "" : ""}
-//       />
-//     </mesh>
-//   );
-// }
-//
 
 import { Ubuntu } from "next/font/google";
 
@@ -321,16 +209,6 @@ export default function About() {
                 ]);
               }}
             >
-              {/* <Canvas>
-                  <ambientLight intensity={0.7} />
-                  <spotLight
-                    position={[10, 10, 10]}
-                    angle={0.15}
-                    penumbra={1}
-                  />
-                  <pointLight position={[-10, -10, -10]} />
-                  <Box position={[0, 0, 0]} />
-                </Canvas> */}
               <Image
                 src={Red_Coding}
                 alt="Image"

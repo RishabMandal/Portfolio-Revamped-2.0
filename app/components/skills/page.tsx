@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 // import languageimage from "./languageimage.jpg";
-import projectimage1 from "../../../assets/Picsart_22-08-10_21-49-15-590.png";
+import projectimage1 from "../../../assets/ecommerceProjectImage.jpg";
 import projectimage2 from "../../../assets/projectimage2.jpg";
 import projectimage3 from "../../../assets/projectimage3.png";
 // From here starts new portion
@@ -173,8 +173,10 @@ export default function Skills() {
             >
               <Image
                 onClick={() => {
-                  window.location.href =
-                    "https://rishabmandal.github.io/Login-Page/";
+                  window.open(
+                    "https://myecommerce-seven.vercel.app/",
+                    "_blank"
+                  );
                 }}
                 className="object-cover object-center rounded-xl cursor-pointer"
                 alt="hero"
@@ -197,10 +199,23 @@ export default function Skills() {
               className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
             >
               <h1 className="font-Ubuntu sm:text-4xl text-3xl mb-4 text-red-600">
-                Login and Register Page
+                Online Merchandise Platform
               </h1>
+              <p className="mb-4 mt-2 leading-relaxed font-Ubuntu">
+                A warm welcome to our comprehensive e-commerce platform, where
+                you will discover a wide-ranging selection of products,
+                encompassing clothing, smartphones, jewelry, and various
+                electronic devices. Our catalog is thoughtfully curated to
+                feature an extensive array of fashion items, from elegant attire
+                to exquisite jewelry pieces, along with the latest smartphone
+                models and cutting-edge electronic gadgets. We invite you to
+                peruse our collection and find the ideal products to cater to
+                your varied requirements.
+              </p>
               <p className="mb-8 mt-2 leading-relaxed font-Ubuntu">
-                Technologies used: HTML, CSS & Javascript, React JS.
+                Technologies used : Next JS, JavaScript, Tailwind CSS,
+                Framer-motion, React JS, Express JS, MongoDB, Firebase-Auth,
+                Stripe
               </p>
             </motion.div>
           </motion.div>
@@ -224,24 +239,11 @@ export default function Skills() {
                 ease: "easeOut",
               }}
               ref={ref}
-              // className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
               className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left items-center text-center"
             >
-              {/* <Image
-                        onClick={() => {
-                          window.location.href =
-                            "https://rishabmandal.github.io/Login-Page/";
-                        }}
-                        className="object-cover object-center rounded-xl cursor-pointer"
-                        alt="hero"
-                        src={projectimage2}
-                      /> */}
               <h1 className="font-Ubuntu sm:text-4xl text-3xl mb-4 text-red-600">
                 Personal Password Manager
               </h1>
-              {/* <p className="mb-8 mt-2 leading-relaxed font-Ubuntu">
-                        Made with React JS, Tailwind CSS & Framer Motion.
-                      </p> */}
               <p className="mb-2 mt-6 mr-2 leading-relaxed font-Ubuntu">
                 PersonalPass is a password manager that helps users securely
                 store and manage their login credentials for various online
@@ -271,12 +273,6 @@ export default function Skills() {
               // className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center"
               className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
             >
-              {/* <h1 className="font-Ubuntu sm:text-4xl text-3xl mb-4 text-red-600">
-                        Personal Password Manager
-                      </h1>
-                      <p className="mb-8 mt-2 leading-relaxed font-Ubuntu">
-                        Made with React JS, Tailwind CSS & Framer Motion.
-                      </p> */}
               <Image
                 onClick={() => {
                   window.location.href =
@@ -339,9 +335,6 @@ export default function Skills() {
               <h1 className="font-Ubuntu sm:text-4xl text-3xl mb-4 text-red-600">
                 Hangman Game
               </h1>
-              {/* <p className="mb-8 mt-2 leading-relaxed font-Ubuntu">
-                        Made with React JS & Tailwind CSS.
-                      </p> */}
               <p className="mb-4 mt-2 leading-relaxed font-Ubuntu">
                 Designed a word game in which player has to guess a word that
                 the other player has thought of, by guessing the letters in it.
